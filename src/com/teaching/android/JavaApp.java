@@ -1,7 +1,6 @@
 package com.teaching.android;
 
-import java.util.Random;
-import java.util.Scanner;
+import com.teaching.android.Punto;
 
 /**
  * Empty Java App for teaching purposes.
@@ -10,16 +9,14 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-        Persona p1 = new Persona("Paco", 100f);
-        Persona p2 = new Persona("Pepe",500f);
-        p1.pagar(p2, 400f);
-        String nombre1 = p1.getNombre();
-        System.out.println(nombre1);
-        System.out.println(" tiene "+ p1.getDinero() + "€");
-        String nombre2 = p2.getNombre();
-        System.out.println(nombre2);
-        System.out.println(" tiene "+ p2.getDinero() + "€");
-        p1.setDinero(0);
+    Punto p1 = new Punto(2,4);
+    Punto p2 = new Punto(3,5);
+    double distancia = p1.distancia(3,5);
+    System.out.println(distancia);
+    double distancia2 = p1.distancia(p2);
+    System.out.println(distancia2);
+
+    System.out.println(p1);
         }
 
     }

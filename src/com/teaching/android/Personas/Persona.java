@@ -1,6 +1,5 @@
-package com.teaching.android;
 
-import sun.reflect.generics.tree.ReturnType;
+package com.teaching.android.Personas;
 
 public class Persona {
     private String nombre;
