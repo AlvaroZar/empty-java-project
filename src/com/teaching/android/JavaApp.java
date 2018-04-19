@@ -10,11 +10,16 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-      for (int i=0;i<=10;i++){
-
-              System.out.println(new Random().nextInt(10)+1);
-
-         }
+        Persona p1 = new Persona("Paco", 100f);
+        Persona p2 = new Persona("Pepe",500f);
+        p1.pagar(p2, 400f);
+        String nombre1 = p1.getNombre();
+        System.out.println(nombre1);
+        System.out.println(" tiene "+ p1.getDinero() + "€");
+        String nombre2 = p2.getNombre();
+        System.out.println(nombre2);
+        System.out.println(" tiene "+ p2.getDinero() + "€");
+        p1.setDinero(0);
         }
 
     }
